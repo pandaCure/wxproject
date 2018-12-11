@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/movie/movie",
+    "pages/ball/ball",
+    "pages/blog/blog",
+    "pages/setting/setting"
+  ],
+  "window": {
+    "navigationBarTitleText":"学习微信小程序",
+    "navigationBarBackgroundColor": "#EFAEFD",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "backgroundColor": "#000000",
+    "backgroundTextStyle":"light",
+    "backgroundColorTop":"#FAAEEA",
+    "backgroundColorBottom":"#EAAEDF"
+  },
+  "tabBar": {
+    "position":"bottom",
+    "color": "#000000",
+    "selectedColor":"#ffffff",
+    "backgroundColor":"#ddadfa",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"assets/index1.png",
+        "selectedIconPath":"assets/index2.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath": "assets/movie1.png",
+        "selectedIconPath": "assets/movie2.png"
+      },
+      {
+        "pagePath": "pages/ball/ball",
+        "text": "篮球",
+        "iconPath": "assets/ball1.png",
+        "selectedIconPath": "assets/ball2.png"
+      },
+      {
+        "pagePath": "pages/blog/blog",
+        "text": "博客",
+        "iconPath": "assets/blog1.png",
+        "selectedIconPath": "assets/blog2.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "设置",
+        "iconPath": "assets/setting1.png",
+        "selectedIconPath": "assets/setting2.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
