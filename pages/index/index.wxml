@@ -7,32 +7,33 @@
     </block>
   </swiper>
   <view class='container_bottom'>
-    <block wx:for="{{tripData}}" wx:key="index">
+    <block wx:for="{{swiperData}}" wx:key="index">
       <view class='trip_container'>
         <view class='trip_header'>
-          <!-- <image></image> -->
-          <view>
-            <text>9图</text>
+          <image src="{{item.imgurl}}" class='trip_header_img' mode="widthFix">
+            <view class='trip_header_img_text'>
+              <text class='trip_header_img_text_num'>9图</text>
+            </view>
+          </image>
+        </view>
+        <view class='trip_location'>
+          <image src='../../assets/location.png' class='trip_location_img'></image>
+          <text class='trip_location_hotel'>上海宝格丽大酒店</text>
+        </view>
+        <view class='trip_context'>
+          <text class='trip_context_text'>大神带把精神病的骄傲不是大家卡第八代</text>
+        </view>
+        <view class='trip_userinfo'>
+          <open-data type="userAvatarUrl" class='trip_userava'></open-data>
+          <view class='trip_userinfo_time'>
+            <text class='trip_userinfo_nickname'>野生11</text>
+            <text class='trip_userinfo_time'>10-28</text>
+          </view>
+          <view class='trip_love'>
+            <image src='../../assets/collection1.png' class='trip_love_img'></image>
+            <text class='trip_love_collection'>530</text>
           </view>
         </view>
-        <!-- <view>
-          <image></image>
-          <text>上海宝格丽大酒店</text>
-        </view>
-        <view>
-          <text>大神带把精神病的骄傲不是大家卡第八代</text>
-        </view>
-        <view>
-          <image></image>
-          <view>
-            <text>野生11</text>
-            <text>10-28</text>
-          </view>
-          <view>
-            <image></image>
-            <text>530</text>
-          </view>
-        </view> -->
       </view>
     </block>
   </view>

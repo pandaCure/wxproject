@@ -1,17 +1,99 @@
 .index_swiper_img {
   width: 100%;
 }
+
 .container_bottom {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
+
 .trip_container {
   border-radius: 8rpx;
   box-sizing: border-box;
   flex: 1 1 50%;
   padding: 10px;
 }
+
 .trip_header {
-  background-color: rebeccapurple;
+  width: 100%;
+}
+
+.trip_header_img {
+  width: 100%;
+  position: relative;
+}
+
+.trip_header_img_text {
+  position: absolute;
+  bottom: 10rpx;
+  right: 6rpx;
+  width: 90rpx;
+  height: 40rpx;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trip_header_img_text_num {
+  color: #fff;
+  font-size: 20rpx;
+}
+
+.trip_location {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.trip_location_img {
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 10rpx;
+}
+
+.trip_location_hotel {
+  color: #000;
+  font-size: 20rpx;
+  margin-right: 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.trip_context {
+  width: 100%;
+}
+
+.trip_context_text {
+  color: #000;
+  font-size: 20rpx;
+  text-align: left;
+  text-indent: 2em;
+}
+.trip_userinfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between
+}
+.trip_userava {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+}
+.trip_userinfo_time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20rpx;
+}
+.trip_love_img {
+  width: 40rpx;
+  height: 40rpx;
 }
