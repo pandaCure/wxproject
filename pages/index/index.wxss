@@ -1,14 +1,17 @@
-.container {
-  height: 200px;
-  width: 100% - 2px;
-  border: 1px solid blue;
+.index_swiper_img {
+  width: 100%;
 }
-.test {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  transition: 300px 10s cubic-bezier(0.075, 0.82, 0.165, 1);
+.container_bottom {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
-.test:hover {
-  width: 400px;
+.trip_container {
+  border-radius: 8rpx;
+  box-sizing: border-box;
+  flex: 1 1 50%;
+  padding: 10px;
+}
+.trip_header {
+  background-color: rebeccapurple;
 }

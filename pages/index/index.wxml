@@ -1,3 +1,39 @@
 <view class='container'>
-  <view class='test'></view>
+  <swiper indicator-dots="{{true}}" indicator-color="rgba(155,222,111,0.8)" indicator-active-color="#ffffff" autoplay="{{true}}" interval="1500" duration="500">
+    <block wx:for="{{swiperData}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item.imgurl}}" mode="scaleToFill" lazy-load="{{true}}" class="index_swiper_img"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='container_bottom'>
+    <block wx:for="{{tripData}}" wx:key="index">
+      <view class='trip_container'>
+        <view class='trip_header'>
+          <!-- <image></image> -->
+          <view>
+            <text>9图</text>
+          </view>
+        </view>
+        <!-- <view>
+          <image></image>
+          <text>上海宝格丽大酒店</text>
+        </view>
+        <view>
+          <text>大神带把精神病的骄傲不是大家卡第八代</text>
+        </view>
+        <view>
+          <image></image>
+          <view>
+            <text>野生11</text>
+            <text>10-28</text>
+          </view>
+          <view>
+            <image></image>
+            <text>530</text>
+          </view>
+        </view> -->
+      </view>
+    </block>
+  </view>
 </view>
