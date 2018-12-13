@@ -1,0 +1,5 @@
+.text {
+  text-indent: 2em;
+  word-break: break-all;
+  text-indent: 2em;
+}

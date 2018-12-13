@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/movie/movie",
+    "pages/index/index",
+    
     "pages/ball/ball",
     "pages/blog/blog",
     "pages/setting/setting"

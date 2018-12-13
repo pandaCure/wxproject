@@ -35,5 +35,14 @@ Page({
   },
   onPullDownRefresh(){
     console.log('refresh')
+  },
+  getImageInfo ({ detail }) {
+    console.log(detail)
+  },
+  onReachBottom () {
+    console.log(`页面上拉触底事件的处理函数`)
+  },
+  onPageScroll () {
+    console.log(`页面滚动触发事件的处理函数`)
   }
 })

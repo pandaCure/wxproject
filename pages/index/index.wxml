@@ -10,7 +10,7 @@
     <block wx:for="{{swiperData}}" wx:key="index">
       <view class='trip_container'>
         <view class='trip_header'>
-          <image src="{{item.imgurl}}" class='trip_header_img' mode="widthFix">
+          <image src="{{item.imgurl}}" class='trip_header_img' mode="widthFix" bindload="getImageInfo">
             <view class='trip_header_img_text'>
               <text class='trip_header_img_text_num'>9图</text>
             </view>
@@ -21,13 +21,15 @@
           <text class='trip_location_hotel'>上海宝格丽大酒店</text>
         </view>
         <view class='trip_context'>
-          <text class='trip_context_text'>大神带把精神病的骄傲不是大家卡第八代</text>
+          <text class='trip_context_text' decode="{{true}}">大神带把精神病的骄傲不是大家卡第八代</text>
         </view>
         <view class='trip_userinfo'>
-          <open-data type="userAvatarUrl" class='trip_userava'></open-data>
-          <view class='trip_userinfo_time'>
-            <text class='trip_userinfo_nickname'>野生11</text>
-            <text class='trip_userinfo_time'>10-28</text>
+          <view class='trip_userinfo_person'>
+            <open-data type="userAvatarUrl" class='trip_userava'></open-data>
+            <view class='trip_userinfo_time'>
+              <text class='trip_userinfo_nickname'>野生11</text>
+              <text class='trip_userinfo_time'>10-28</text>
+            </view>
           </view>
           <view class='trip_love'>
             <image src='../../assets/collection1.png' class='trip_love_img'></image>
