@@ -1,8 +1,7 @@
 {
   "pages": [
-    "pages/movie/movie",
     "pages/index/index",
-    
+    "pages/movie/movie",
     "pages/ball/ball",
     "pages/blog/blog",
     "pages/setting/setting"
@@ -58,6 +57,5 @@
   "networkTimeout": {
     "request": 10000,
     "downloadFile": 10000
-  },
-  "debug": true
+  }
 }
