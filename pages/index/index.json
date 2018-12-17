@@ -1,6 +1,8 @@
 {
   "window": {
-    "enablePullDownRefresh":true,
     "onReachBottomDistance": 0
+  },
+  "usingComponents": {
+    "nav-bar": "/components/navbar/index"
   }
 }

@@ -1,0 +1,9 @@
+<view class="nav" style="{{height}}">
+  <view wx:if="{{back}}" class='nav_back' style='{{topBar}}'>
+    <image src='../../assets/back.png' class='nav_back_image'></image>
+  </view>
+  <view wx:else="{{back}}" class='nav_back'>
+    <slot></slot>
+  </view>
+  <text class='nav_title' style='{{top}}'>{{title}}</text>
+</view>

@@ -4,17 +4,18 @@
     "pages/movie/movie",
     "pages/ball/ball",
     "pages/blog/blog",
-    "pages/setting/setting"
+    "pages/setting/setting",
+    "pages/index/detail/detail"
   ],
   "window": {
     "navigationBarTitleText":"学习微信小程序",
     "navigationBarBackgroundColor": "#EFAEFD",
     "navigationBarTextStyle": "black",
-    "navigationStyle": "default",
+    "navigationStyle": "custom",
     "backgroundColor": "#000000",
     "backgroundTextStyle":"light",
     "backgroundColorTop":"#FAAEEA",
-    "backgroundColorBottom":"#EAAEDF"
+    "backgroundColorBottom":"#fff"
   },
   "tabBar": {
     "position":"bottom",

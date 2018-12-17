@@ -1,0 +1,31 @@
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+.nav_back {
+  position: absolute;
+  /* top: 25pt; */
+  left: 10pt;
+}
+.nav_back_image {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+.nav_title {
+  font-size: 16px;
+  color: #000;
+  position: absolute;
+  /* top: 25pt; */
+  /* top: 41pt; */
+  /* right: 10pt; */
+  align-self: center; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
