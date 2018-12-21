@@ -1,1 +1,1 @@
-<view>1111</view>
+<nav-bar systemInfo='{{systemInfo}}'></nav-bar>
