@@ -1,6 +1,6 @@
 {
   "window": {
-    "onReachBottomDistance": 0
+    "navigationStyle": "custom"
   },
   "usingComponents": {
     "nav-bar": "/components/navbar/index"

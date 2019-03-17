@@ -1,3 +1,4 @@
+<nav-bar systemInfo='{{systemInfo}}'></nav-bar>
 <view class='container'>
   <swiper indicator-dots="{{true}}" indicator-color="rgba(155,222,111,0.8)" indicator-active-color="#ffffff" autoplay="{{true}}" interval="1500" duration="500" id="swiper">
     <block wx:for="{{swiperData}}" wx:key="{{index}}">
@@ -6,12 +7,11 @@
       </swiper-item>
     </block>
   </swiper>
-  <view class='container_bottom' bindtouchstart='start' bindtouchmove='move' bindtouchend='end' style="{{containerBottom}}">
-  <view style="{{translate}}" class='translate_container'>
+  <view class='container_bottom' style="{{containerBottom}}">
     <block wx:for="{{swiperData}}" wx:key="index" id="view_container">
-      <view class='trip_container'>
+      <view class='trip_container' style='{{item.position}}'  bindtap="goDetail" data-index='{{index}}'>
         <view class='trip_header'>
-          <image src="{{item.imgurl}}" class='trip_header_img' mode="widthFix" bindload="getImageInfo">
+          <image src="{{item.imgurl}}" class='trip_header_img' mode="widthFix" bindload="getImageInfo" bindload='load'>
             <view class='trip_header_img_text'>
               <text class='trip_header_img_text_num'>9图</text>
             </view>
@@ -39,6 +39,9 @@
         </view>
       </view>
     </block>
-    </view>
+  </view>
+  <view class='loading' hidden='{{bottomLoadMore}}'>
+    <image src='../../assets/loading.png' class='loading_image'></image>
+    <text class='loading_text'>加载更多...</text>
   </view>
 </view>

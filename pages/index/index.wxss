@@ -1,24 +1,35 @@
 page {
   height: 100%;
 }
+
 .index_swiper_img {
   width: 100%;
 }
 
-.container_bottom, .translate_container {
+.translate_container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.container_bottom {
-  overflow: hidden;
-}
 
+.container_bottom {
+  width: 100%;
+  padding: 2vw 0px 0px 2vw;
+  box-sizing:border-box;
+  position: relative;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+ 
 .trip_container {
   border-radius: 8rpx;
   box-sizing: border-box;
-  flex: 1 1 50%;
-  padding: 10px;
+  max-width: 50vw;
+  /* /* flex: 1 1 46vw; */
+  margin-right: 2vw;
+  box-shadow: 2rpx 2rpx 5rpx 5rpx rgba(0,0,0,0.1);
+  width: 47vw;
+  float: left;
 }
 
 .trip_header {
@@ -85,16 +96,19 @@ page {
   text-indent: 2em;
   float: left;
 }
+
 .trip_userinfo {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.trip_userinfo_person, .trip_love{
+
+.trip_userinfo_person, .trip_love {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .trip_userava {
   width: 40rpx;
   height: 40rpx;
@@ -103,6 +117,7 @@ page {
   margin-right: 10rpx;
   display: block;
 }
+
 .trip_userinfo_time {
   display: flex;
   flex-direction: column;
@@ -110,11 +125,46 @@ page {
   font-size: 20rpx;
   vertical-align: middle;
 }
+
 .trip_love_img {
   width: 32rpx;
   height: 32rpx;
 }
+
 .trip_love_collection {
   font-size: 20rpx;
   margin-left: 10rpx;
+}
+
+.loading {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 10rpx;
+  padding-bottom: 15rpx;
+}
+
+.loading_image {
+  width: 56rpx;
+  height: 56rpx;
+  animation: loadingRotate 5s linear infinite;
+  margin-right: 8rpx;
+}
+
+.loading_text {
+  font-size: 23rpx;
+  color: #000;
+}
+
+@keyframes loadingRotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
 }
